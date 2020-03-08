@@ -22,4 +22,16 @@ function a() {
 ```text
 git status
 git add .
+
+2 단계 commit, push
+
+local - 어딘가 - server
+       commit - push
+
+git commit -m "메세지 블라블라"
+git status
+
+"가입하신 이메일"
+""
+
 ```
