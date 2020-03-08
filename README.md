@@ -15,3 +15,11 @@ return 10
 ```
 
 > p
+
+```
+git status
+git add .
+2 단계 commit, push
+local - 어딘가 - server
+        (commit) (push)
+```
