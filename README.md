@@ -33,5 +33,6 @@ git status
 
 "가입하신 이메일"
 ""
-
+git log
+git push origin <branch>
 ```
