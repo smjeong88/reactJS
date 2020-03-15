@@ -1,14 +1,18 @@
 import React from 'react'
 import Title from './components/title'
-
-// state = 내가 가진 값
-// props = 누군가를 통해 받은 값
+import WebtoonsPage from './pages/webtoons'
+import { Container } from './design-system/container'
+import { GlobalStyle } from './components/reset-style'
 
 function App() {
   return (
-    <div>
-      <Title text="메인 페이지" />
-    </div>
+    <>
+      <GlobalStyle />
+      <Container>
+        <Title text="웹툰" />
+        <WebtoonsPage />
+      </Container>
+    </>
   )
 }
 
