@@ -1,4 +1,4 @@
-# 20200308 - ReactJS_Study_setting
+# ReactJS_Study
 
 - li
 
@@ -16,6 +16,8 @@ return 10
 
 > p
 
+git 명령어
+
 ```
 git status
 
@@ -25,8 +27,11 @@ git add .
 local - 어딘가 - server
         (commit) (push)
 
-git commit -m "메세지"
-git log
-git push origin <branch>
+git commit -m "메세지" : 커밋
+git log : 로그확인
+git push origin <branch> : 푸쉬
 
+## branch
+git checkout -b feature-add-text : -b 새로운 브런치 생성 및 이동
+git checkout : 기존에 있는 브런치에 이동
 ```
