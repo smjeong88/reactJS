@@ -34,4 +34,7 @@ git push origin <branch> : 푸쉬
 ## branch
 git checkout -b feature-add-text : -b 새로운 브런치 생성 및 이동
 git checkout : 기존에 있는 브런치에 이동
+
+## pull
+git pull origin master : git 서버의 파일들을 로컬에 가져온다
 ```
