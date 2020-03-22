@@ -5,18 +5,25 @@ import { Text } from '../../design-system/text'
 import PropsTypes from 'prop-types'
 
 const Image = styled.img``
-const Badge = steyld.span``
+const Badge = styled.span`
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: yellow;
+`
 
 function Webtoon({ source }) {
   const { title, src, updated } = source
 
   return (
     <Container textAlign="center">
-      <Image src={src} />
-      <Text bold margin="10px 0 10px 0">
-        {title}
-      </Text>
-      {updated && <Badge>뱃지</Badge>}
+      <Container position="relative" display="inline-block">
+        <Image src={src} />
+        <Text bold margin="10px 0 10px 0">
+          {title}
+        </Text>
+        {updated && <Badge>뱃지</Badge>}
+      </Container>
     </Container>
   )
 }

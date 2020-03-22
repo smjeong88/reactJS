@@ -2,6 +2,11 @@ import styled from 'styled-components'
 
 // position, width, height, margin, padding, maxWidth
 export const Container = styled.div`
+  ${({ display }) =>
+    display &&
+    `
+  display: ${display};
+  `}
   ${({ position }) =>
     position &&
     `
