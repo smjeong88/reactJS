@@ -1,44 +1,40 @@
-# H1
+# ReactJS_Study
 
 - li
 
 1. li
-
-![image](www.sdjfksldjfksld)
-[link](www.naver.com)
+   ![image](src)
+   [link](www.naver.com)
 
 **strong**
 
-```js
-function a() {
-  return 10
+```
+function a(){
+return 10
 }
 ```
 
-<br />
+> p
 
-> ppppppp
+git 명령어
 
-```text
+```
 git status
+
 git add .
 
 2 단계 commit, push
-
 local - 어딘가 - server
-       commit - push
+        (commit) (push)
 
-git commit -m "메세지 블라블라"
-git status
-
-"가입하신 이메일"
-""
-git log
-git push origin <branch>
-```
+git commit -m "메세지" : 커밋
+git log : 로그확인
+git push origin <branch> : 푸쉬
 
 ## branch
+git checkout -b feature-add-text : -b 새로운 브런치 생성 및 이동
+git checkout : 기존에 있는 브런치에 이동
 
-```
-git checkout -b feature-add-text
+## pull
+git pull origin master : git 서버의 파일들을 로컬에 가져온다
 ```
