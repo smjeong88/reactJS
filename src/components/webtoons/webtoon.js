@@ -16,7 +16,7 @@ function Webtoon({ source }) {
       <Text bold margin="10px 0 10px 0">
         {title}
       </Text>
-      {updated && <Text>뱃지</Text>}
+      {updated && <Badge>뱃지</Badge>}
     </Container>
   )
 }
