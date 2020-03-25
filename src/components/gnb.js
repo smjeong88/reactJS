@@ -12,21 +12,24 @@ const GnbContainer = styled(Container)`
 const LINKS = [
   {
     path: '/',
-    label: 'home',
+    label: '홈',
   },
   {
     path: '/webtoon',
-    label: 'webtoon',
+    label: ' 웹툰',
   },
   {
     path: '/pokemon',
-    label: 'pokemon',
+    label: ' 포켓몬',
+  },
+  {
+    path: '/practice',
+    label: ' 연습',
   },
 ]
 
 function Gnb({ title }) {
   //   const [title, setTitle] = useState('리액트 공부')
-
   return (
     <GnbContainer padding="20px 10px">
       <Text fontSize="31" bold>
@@ -43,6 +46,8 @@ function Gnb({ title }) {
 
 Gnb.propTypes = {
   title: PropTypes.string,
+  label: PropTypes.string,
+  path: PropTypes.string,
 }
 
 export default Gnb

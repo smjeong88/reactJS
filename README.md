@@ -38,3 +38,9 @@ git checkout : 기존에 있는 브런치에 이동
 ## pull
 git pull origin master : git 서버의 파일들을 로컬에 가져온다
 ```
+
+## Sever
+
+```
+npx json-server --watch db.json
+```

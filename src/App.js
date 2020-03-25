@@ -6,18 +6,25 @@ import { GlobalStyle } from './components/reset-style'
 import WebtoonsPage from './pages/webtoons'
 import HomePage from './pages/home'
 import PokemonPage from './pages/pokemon'
+import PracticePage from './pages/practice'
 
 function App() {
   return (
-    //하이 오더 컴포넌트 최상단에서 연산을 하고 자식 컴포넌트에게 내려주는 방식
+    /**
+     * <2020.03.22>
+     * 1.Context API : 페이지 변동간 가져가야 할 값이 많을 경우
+     * 2.하이오더 컴포넌트 : 두 자식간의 데이터 이동이 필요한 경우 부모 컴포넌트에 값을 전달한 후 값을 공유 하는 방식
+     *
+     */
     <Router>
       <GlobalStyle />
       <Container>
-        <Gnb title="Navbar" />
+        <Gnb title="Navbar" description="제목" />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/webtoon" component={WebtoonsPage} />
           <Route path="/pokemon" component={PokemonPage} />
+          <Route path="/practice" component={PracticePage} />
           <Route component={() => <div>404:Error</div>} />
         </Switch>
       </Container>
