@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FILTERS } from './constants'
+import FILTERS from './constants'
 import { useTodoContext } from './context'
 
 function Footer() {
@@ -14,6 +14,7 @@ function Footer() {
   }
   return (
     <div>
+      [FOOTER]
       {FILTERS.map((type, idx) => (
         <div
           key={idx}

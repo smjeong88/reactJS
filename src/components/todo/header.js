@@ -31,12 +31,15 @@ function Header() {
   }
   return (
     <div>
-      <input
-        onChange={handleText}
-        onKeyDown={handleEnter}
-        placeholder="Todo를 입력하세요"
-        value={text}
-      />
+      <div>[HEADER]</div>
+      <div>
+        <input
+          onChange={handleText}
+          onKeyDown={handleEnter}
+          placeholder="Todo를 입력하세요"
+          value={text}
+        />
+      </div>
     </div>
   )
 }

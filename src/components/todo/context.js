@@ -1,7 +1,16 @@
-import React, { useEffect, useReducer, useMemo } from 'react'
-import { createContext, useContext, useState } from 'react'
+// 패키지나 사용자 컴포넌트에서 export default로 내보낸 경우 import 할 때 import xxx from 'xxx'
+// Hook 내장 함수나 사용자 컴포넌트에서 export 로 내보낸 경우 import 할 때 import {xxx, xxx} from 'xxx'
+
+import React, {
+  useEffect,
+  useReducer,
+  useMemo,
+  createContext,
+  useContext,
+  useState,
+} from 'react'
 import PropType from 'prop-types'
-import { FILTERS } from './constants'
+import FILTERS from './constants'
 
 const Context = createContext()
 
@@ -18,6 +27,7 @@ function reducer(state, action) {
       const todos = action.payload
 
       return {
+        // 전개 연산자
         ...state,
         todos,
         filterdTodos: mapToFilter(todos, state.filter),

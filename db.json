@@ -1,16 +1,6 @@
 {
   "todos": [
     {
-      "id": 0,
-      "title": "리액트 공부하기",
-      "isDone": false
-    },
-    {
-      "id": 1,
-      "title": "밥 먹기",
-      "isDone": true
-    },
-    {
       "title": "asdas",
       "isDone": true,
       "id": 2

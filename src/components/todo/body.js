@@ -1,5 +1,8 @@
 import React from 'react'
 import { useTodoContext } from './context'
+
+// 한 줄에 여러개의 함수를 import 해오기 위해서 export 로 내보낸다.
+// export 로 내보내면 import {xxx, xxx, xxx} from 'xxx'로 가져올 수 있다.
 import { delelteTodo, getTodo, updateTodo } from './service'
 
 function Body() {
@@ -7,6 +10,11 @@ function Body() {
     state,
     actions: { setTodos },
   } = useTodoContext()
+
+  // 객체 분해 할당 연산자
+  // ex) const { a, b } = useTodoContext()
+  // useTodoContext()는 ./context 파일에 return useContext(Context)를 return 하고 있고
+  // a, b는 <Context.Provider value={{a,b}}></Context.Provider> 의 형태로 값을 가지고 있고
   const { filterdTodos } = state
 
   const handleDeleteTodo = async (id) => {
@@ -34,6 +42,7 @@ function Body() {
   // {todos.map(({ id, title, isDone }, idx) => {} : 객체 return
   return (
     <div>
+      [BODY]
       {filterdTodos.map((todo, idx) => {
         const { id, title, isDone } = todo
         return (
