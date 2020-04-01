@@ -9,7 +9,7 @@ import React, { useEffect, useState } from 'react'
 import { Container } from '../../design-system/container'
 
 /**
- * ./service : 비동기 통신을 할때 쓰는 방식
+ * ./service : 비동기 통신하는 파일
  * export async function fetchWebtoons() {} : json 타입
  * const response = [{title:제목,description:내용}]
  * return response
@@ -18,6 +18,9 @@ import { fetchWebtoons } from './service'
 import Webtoon from './webtoon'
 
 function Webtoons() {
+  //ES6 문법 const[a,b] = useState(null)
+  //const webtoons = useState(null)
+  //const setWebtoons = useState(null)
   const [webtoons, setWebtoons] = useState(null)
 
   useEffect(() => {

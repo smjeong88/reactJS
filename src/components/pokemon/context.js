@@ -1,3 +1,4 @@
+//ContextAPI js 파일
 import React, { createContext, useContext, useState } from 'react'
 import { fdatasyncSync } from 'fs'
 import PropTypes from 'prop-types'

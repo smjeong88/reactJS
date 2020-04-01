@@ -1,3 +1,4 @@
+// pokemon의 뷰 역할을 하는 파일
 import React, { useState } from 'react'
 
 import { Container, Text } from '../../design-system'
@@ -11,7 +12,6 @@ function Pokemon() {
     setSelectedPokemon(pokemon)
   }
 
-  console.log('selectedPokemon', selectedPokemon)
   return (
     <Container>
       <Detail />

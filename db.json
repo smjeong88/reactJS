@@ -1,5 +1,5 @@
 {
-  "todo": [
+  "todos": [
     {
       "id": 0,
       "title": "리액트 공부하기",
@@ -9,6 +9,21 @@
       "id": 1,
       "title": "밥 먹기",
       "isDone": true
+    },
+    {
+      "title": "asdas",
+      "isDone": true,
+      "id": 2
+    },
+    {
+      "title": "가나다",
+      "isDone": true,
+      "id": 3
+    },
+    {
+      "title": "테스트",
+      "isDone": false,
+      "id": 4
     }
   ]
 }

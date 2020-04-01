@@ -23,6 +23,10 @@ const LINKS = [
     label: ' 포켓몬',
   },
   {
+    path: '/todo',
+    label: ' Todo',
+  },
+  {
     path: '/practice',
     label: ' 연습',
   },

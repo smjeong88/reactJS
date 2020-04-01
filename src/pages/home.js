@@ -1,7 +1,16 @@
 import React from 'react'
 
-function Home() {
-  return <div>Home</div>
+import Home from '../components/home'
+
+import { ApplicationProvider } from '../components/home/context'
+function HomePage() {
+  return (
+    <div>
+      <ApplicationProvider>
+        <Home />
+      </ApplicationProvider>
+    </div>
+  )
 }
 
-export default Home
+export default HomePage

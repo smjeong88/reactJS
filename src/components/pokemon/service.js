@@ -1,3 +1,6 @@
+// 비동기 방식으로 데이터를 가져가는 파일
+// fetchPokemons = list.js
+// fetchPokemon = detail.js
 export async function fetchPokemons() {
   const response = await fetch('https://pokeapi.co/api/v2/pokemon/')
 
