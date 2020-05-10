@@ -1,3 +1,4 @@
+// list.js에서 포켓몬을 선택하면 한 개의 포켓몬 정보를 가져오는 파일
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Container, Text } from '../../design-system'
@@ -15,11 +16,22 @@ function Detail() {
   } = pokemon
   return (
     <Container display="inline-block" width="400">
-      <img src={front_default}></img>
-      <div>
+      <Container>
+        <img src={front_default}></img>
+      </Container>
+      <Container>
+        <img src={back_default}></img>
+      </Container>
+      <Container>
+        <img src={front_shiny}></img>
+      </Container>
+      <Container>
+        <img src={back_shiny}></img>
+      </Container>
+      <Text>
         <span>몸무게:{weight}</span>
         <span>키:{height}</span>
-      </div>
+      </Text>
     </Container>
   )
 }

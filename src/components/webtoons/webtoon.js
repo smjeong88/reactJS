@@ -12,8 +12,9 @@ const Badge = styled.span`
   background: yellow;
 `
 
-function Webtoon({ source }) {
+function Webtoon({ key, source }) {
   const { title, src, updated } = source
+  const idx = key
 
   return (
     <Container textAlign="center">
@@ -30,6 +31,7 @@ function Webtoon({ source }) {
 
 Webtoon.propTypes = {
   source: PropsTypes.object,
+  key: PropsTypes.string,
 }
 
 export default Webtoon

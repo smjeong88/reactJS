@@ -6,6 +6,7 @@ import { GlobalStyle } from './components/reset-style'
 import WebtoonsPage from './pages/webtoons'
 import HomePage from './pages/home'
 import PokemonPage from './pages/pokemon'
+import TodoPage from './pages/todo'
 import PracticePage from './pages/practice'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route path="/webtoon" component={WebtoonsPage} />
           <Route path="/pokemon" component={PokemonPage} />
+          <Route path="/todo" component={TodoPage} />
           <Route path="/practice" component={PracticePage} />
           <Route component={() => <div>404:Error</div>} />
         </Switch>
