@@ -1,8 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Gnb from './components/gnb'
+// export default Gnb
 import { Container } from './design-system/container'
 import { GlobalStyle } from './components/reset-style'
+// export const GlobalStyle = createGlobalStyle`
 import WebtoonsPage from './pages/webtoons'
 import HomePage from './pages/home'
 import PokemonPage from './pages/pokemon'
