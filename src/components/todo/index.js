@@ -13,7 +13,7 @@ function Todo() {
 
   useEffect(() => {
     async function initalizeTodos() {
-      setTodos(await getTodo())
+      setTodos(await getTodo()) 
     }
     initalizeTodos()
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
