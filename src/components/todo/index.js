@@ -9,7 +9,7 @@ import { Container } from '../../design-system/container'
 function Todo() {
   const {
     actions: { setTodos },
-  } = useTodoContext()
+  } = useTodoContext()  
 
   useEffect(() => {
     async function initalizeTodos() {
