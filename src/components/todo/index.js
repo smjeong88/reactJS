@@ -7,7 +7,7 @@ import { useTodoContext } from './context'
 import { Container } from '../../design-system/container'
 
 function Todo() {
-  const {
+  const { 
     actions: { setTodos },
   } = useTodoContext()  
 
