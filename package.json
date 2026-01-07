@@ -10,7 +10,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
+    "react-scripts": "5.0.1",
     "styled-components": "^5.0.1"
   },
   "scripts": {
@@ -44,9 +44,9 @@
     "@storybook/addon-knobs": "^5.3.8",
     "@storybook/addon-links": "^5.3.8",
     "@storybook/addons": "^5.3.8",
-    "@storybook/react": "^5.3.8",
+    "@storybook/react": "^10.0.7",
     "@storybook/storybook-deployer": "^2.8.6",
-    "eslint": "^6.8.0",
+    "eslint": "^9.39.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
